@@ -7,15 +7,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.com.iolist.model.IoVO;
+import com.com.iolist.model.IoListVO;
 
 public class iolistServiceV1 {
 
-	private List<IoVO> ioVO;
+	private List<IoListVO> ioVO;
 	private String str매입매출;
 
 	public iolistServiceV1() {
-		ioVO = new ArrayList<IoVO>();
+		ioVO = new ArrayList<IoListVO>();
 		str매입매출 = "src/com/com/iolist/애입매출데이터.txt";
 
 	}
@@ -39,7 +39,7 @@ public class iolistServiceV1 {
 					break;
 
 				} else {
-					IoVO vo = new IoVO(scores[0], scores[1], scores[2], scores[3], scores[4], scores[5], scores[6],
+					IoListVO vo = new IoListVO(scores[0], scores[1], scores[2], scores[3], scores[4], scores[5], scores[6],
 							Integer.valueOf(scores[7]), Integer.valueOf(scores[8]), Integer.valueOf(scores[9]),
 							Integer.valueOf(scores[10]));
 
