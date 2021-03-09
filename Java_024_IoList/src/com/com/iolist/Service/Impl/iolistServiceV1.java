@@ -38,12 +38,6 @@ public class iolistServiceV1 {
 				if (reader == null) {
 					break;
 
-				} else {
-					IoListVO vo = new IoListVO(scores[0], scores[1], scores[2], scores[3], scores[4], scores[5], scores[6],
-							Integer.valueOf(scores[7]), Integer.valueOf(scores[8]), Integer.valueOf(scores[9]),
-							Integer.valueOf(scores[10]));
-
-					ioVO.add(vo);
 				}
 
 				System.out.println(scores[0] + "\t" + scores[4] + "\t\t\t" + scores[5] + "\t\t\t" + scores[6]);
